@@ -45,4 +45,11 @@ setTimeout(function() {
     $('#text3').fadeOut();
 }, 9000);
 
+setTimeout(function() {
+    $('#wrapper').fadeIn('slow');
+}, 11000);
+//  
+
+
+
 

@@ -46,31 +46,36 @@ h1 {
 }
  
 #intro p{
-        margin:0 1rem;
-    color: #fff;
-    font-size: 22px;
-        letter-spacing: 10px;
-    font-family: "源ノ明朝","源暎こぶり明朝",serif;
-    -webkit-writing-mode: vertical-rl;
-         -ms-writing-mode: tb-rl;
-         writing-mode: vertical-rl;
+      margin:0 1rem;
+      color: #fff;
+      font-size: 22px;
+      letter-spacing: 10px;
+      font-family: "源ノ明朝","源暎こぶり明朝",serif;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
  
 #wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        height: 100vh;
+        top:0;
+        left:0;
+        display: none;
+        width: 100%;
  
 }
  
-.interval {/*親div*/
-         position: relative;/*相対配置*/
-  }
- 
+.interval {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
  
 .interval img {
          width: 100%;
         opacity: .6;
+        height: 100%;
   }
  
 .logo {
