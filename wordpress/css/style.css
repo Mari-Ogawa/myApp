@@ -1,4 +1,6 @@
-* css animation (prefixes are cut) */
+/* css animation (prefixes are cut) */
+
+
 .appear {
         transform-origin:center top;
         animation:show 3s both;
@@ -50,7 +52,12 @@ h1 {
       color: #fff;
       font-size: 22px;
       letter-spacing: 10px;
-      font-family: "源ノ明朝","源暎こぶり明朝",serif;
+
+      font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+      /*font-family: "Hannari";
+      font-family: 'Noto Serif Japanese';
+      font-family: "源ノ明朝","源暎こぶり明朝",serif;*/ 
+      font-weight: 100;
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -193,3 +200,95 @@ h1 {
   animation-direction: normal, alternate;
 }
  
+ /* content */
+
+ #content {
+  margin: 0;
+  padding: 0;
+
+ }
+/* header */
+div#headerWrap {
+  position: relative;
+
+}
+
+div#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+
+
+  }
+
+div#header h1 {
+    float: left;
+  }
+
+.header-nav {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#gnavi {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0;
+    padding-left: 180px;
+
+ 
+}
+
+ul#gnavi li {
+  text-align: center;
+  float: right;
+  width: 120px;
+  font-size: 18px;
+  font-family: 'Josefin Slab', serif;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul#gnavi li a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+
+.toggle {
+position: fixed;
+top: 15px;
+right: 15px;
+width: 30px;
+height: 30px;
+cursor: pointer;
+transition: transform 0.4s ease 0s,width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,-webkit-transform 0.4s ease 0s;
+opacity: 1;
+z-index: -10;
+}
+
+
+
+.toggle-nav_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 420px;
+    padding: 0 5%;
+    transform: translate(-50%, -50%);
+
+}
+
+#toggle-nav li {
+  font-family: 'Josefin Slab', serif;
+
+}

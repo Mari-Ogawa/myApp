@@ -40,16 +40,17 @@ $(function() {
 
 //一定期間後非表示にする
 setTimeout(function() {
-    $('#text1').fadeOut(3000);
-    $('#text2').fadeOut(3000);
-    $('#text3').fadeOut(3000);
-}, 9000);
+    $('#text1').fadeOut(3);
+    $('#text2').fadeOut(3);
+    $('#text3').fadeOut(3);
+}, 7);
+//3000 と　7000にそれぞれ修正
 
 setTimeout(function() {
     $('#wrapper').fadeIn('slow');
 }, 
-13000);
-//  
+11);
+//  11000に修正
 
 
 
