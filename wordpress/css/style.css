@@ -1,6 +1,6 @@
 /* css animation (prefixes are cut) */
-
-
+ 
+ 
 .appear {
         transform-origin:center top;
         animation:show 3s both;
@@ -52,11 +52,11 @@ h1 {
       color: #fff;
       font-size: 22px;
       letter-spacing: 10px;
-
+ 
       font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
       /*font-family: "Hannari";
       font-family: 'Noto Serif Japanese';
-      font-family: "源ノ明朝","源暎こぶり明朝",serif;*/ 
+      font-family: "源ノ明朝","源暎こぶり明朝",serif;*/
       font-weight: 100;
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -86,7 +86,7 @@ h1 {
   }
  
 .logo {
-        position: absolute;    
+        position: absolute;   
         top: 50%;
          left: 50%;
          -ms-transform: translate(-50%,-50%);
@@ -100,10 +100,10 @@ h1 {
 .logo img {
          width: 100%;
         opacity: 0.7;
-       
+ 
 }
 .guide p {
-        position: absolute;    
+        position: absolute;   
         top: 90%;
          left: 50%;
          -ms-transform: translate(-50%,-50%);
@@ -120,7 +120,7 @@ h1 {
  
 .guide p a {
         color:#FFF;
-        text-decoration:none;  
+        text-decoration:none; 
 }
 .guide p .fa {
         display: block;
@@ -200,41 +200,40 @@ h1 {
   animation-direction: normal, alternate;
 }
  
- /* content */
-
- #content {
+/* content */
+ 
+#content {
   margin: 0;
   padding: 0;
-
- }
+ 
+}
 /* header */
 div#headerWrap {
   position: relative;
-
+ 
 }
-
+ 
 div#header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255,255,255,0.9);
-
-
+        display: flex;
   }
-
+ 
 div#header h1 {
     float: left;
   }
-
+ 
 .header-nav {
     display: inline-block;
 }
-
+ 
 ul {
     list-style: none;
+        display: flex;
 }
-
+ 
 ul#gnavi {
     width: 100%;
     display: block;
@@ -242,31 +241,110 @@ ul#gnavi {
     max-width: 1000px;
     margin: 0;
     padding-left: 180px;
-
+        padding-top: 22px;
+ 
  
 }
-
+ 
 ul#gnavi li {
   text-align: center;
   float: right;
   width: 120px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Josefin Slab', serif;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+ 
 ul#gnavi li a {
     text-decoration: none;
     color: gray;
     display: block;
+        transition: .7s ;
 }
-
-
-
+ 
+ul#gnavi li a:hover {
+    color: black;
+}
+ 
+/* main */
+.main {
+        color:#FFF;
+        width: 80%;
+        margin:0 auto;
+ 
+       
+}
+ 
+div.mainName {
+  margin: 20px 0 50px 0;       
+}
+h1.title_E {
+  font-size: 2.4rem;
+  font-family: 'Josefin Slab', serif;
+  text-align:center;
+  letter-spacing: 0.08em;
+  margin-bottom:-10px;
+ 
+}
+h2.title_J {
+  font-size: 1rem;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight:lighter;
+  text-align:center;
+  letter-spacing: 0.08em;
+  -webkit-transform: rotate(.028deg);
+  -ms-transform: rotate(.028deg);
+  transform: rotate(.028deg);
+ 
+}
+p#animation {
+        color:#FFF;
+        margin: 20px;
+        line-height: 2em;
+       
+}
+ 
+div#footer {
+        margin:0 auto;
+        width: 80%;    
+        padding-top: 30px;
+}
+ 
+div#footer ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin: 0;
+        padding: 6px;
+        list-style-type: none; 
+        border-top: solid #c6c5c1 1px;
+}
+ 
+div#footer ul a {
+        display: block;
+        padding: 12px 24px;
+        text-decoration: none;
+        color: gray;
+        transition: .7s ;
+}
+ 
+div#footer ul a:hover {
+        color: black;
+}
+ 
+address {
+        font-size: 0.7rem;
+        color:#FFF;
+        font-family: 'Josefin Slab', serif;
+         text-align:center;
+         letter-spacing: 0.08em;
+       
+               
+}
 @media screen and (max-width: 1050px){
-
+ 
 .toggle {
 position: fixed;
 top: 15px;
@@ -278,7 +356,7 @@ transition: transform 0.4s ease 0s,width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1
 opacity: 1;
 z-index: -10;
 }
-
+ 
 .smallSize {
   height: 100%;
   width: 100%;
@@ -291,9 +369,9 @@ z-index: -10;
   line-height: 1.1;
   letter-spacing: 0.4em ;
   z-index: 2000;
-
+ 
 }
-
+ 
 .toggle-nav_body {
     position: absolute;
     top: 50%;
@@ -304,39 +382,59 @@ z-index: -10;
     padding: 0 5%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-
+ 
 }
-
+ 
 h1.toggle-logo {
-    position: absolute;
     width: 159px;
     margin: 0 auto;
     padding: 0 0 0 0;
     text-align: center;
-
+ 
 }
-
+ 
 ul#toggle-nav {
         height: 100vh;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-
+ 
 }
-
+ 
 ul#toggle-nav li {
     font-family: 'Josefin Slab', serif;
-    display: block;
     position: relative;
-    display: block;
-    margin-top: -1px;
+    margin-top: 5px;
     text-align: center;
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing: 0.08em;
+        line-height: 180%;
 }
-
+ 
 ul#toggle-nav li a {
   text-decoration: none;
+  color: #00B200;
+  font-weight: bold;
+  position:relative;
+  display: inline-block;
+  transition: .3s;
 }
-
+ 
+ 
+ul#toggle-nav li a::after{
+        position: absolute;
+   bottom: 0;
+   left: 50%;
+   content: '';
+   width: 0;
+   height: 2px;
+   background-color: #004800;
+   transition: .3s;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+ 
+ul#toggle-nav li a:hover::after {
+  width: 100%;
+  color: #004800;
+}
