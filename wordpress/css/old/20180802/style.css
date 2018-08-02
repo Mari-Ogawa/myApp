@@ -1,5 +1,5 @@
 /* css animation (prefixes are cut) */
-@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+ 
  
 .appear {
         transform-origin:center top;
@@ -39,14 +39,6 @@ h1 {
         color: #fff;
 }
 /* intro */
-/*フォント*/
-/*@font-face {
-  font-family: 'Noto Serif Japanese';
-  font-style: normal;
-  font-weight: 100;
-  src: url(../fonts/NotoSerifCJKjp-hinted/NotoSerifCJKjp-ExtraLight.otf) format('opentype');
-}
-*/
  
 #intro {
         height: 100vh;
@@ -61,8 +53,7 @@ h1 {
       font-size: 22px;
       letter-spacing: 10px;
  
-       /*font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;*/
-           font-family:'Hannari';
+      font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
       /*font-family: "Hannari";
       font-family: 'Noto Serif Japanese';
       font-family: "源ノ明朝","源暎こぶり明朝",serif;*/
@@ -90,32 +81,32 @@ h1 {
  
 .interval img {
          width: 100%;
+        opacity: .6;
         height: 100%;
   }
- 
+
   #slide {
   margin:0 auto;
   position:relative;
- 
+
 }
- 
+
 #slide ul li {
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
- 
+
 }
- 
+
 #slide img {
 position:absolute;
 left:0;
 top:0;
- 
 }
  
 .logo {
-        position: absolute;  
+        position: absolute;   
         top: 50%;
          left: 50%;
          -ms-transform: translate(-50%,-50%);
@@ -128,10 +119,11 @@ top:0;
  
 .logo img {
          width: 100%;
+        opacity: 0.7;
  
 }
 .guide p {
-        position: absolute;  
+        position: absolute;   
         top: 90%;
          left: 50%;
          -ms-transform: translate(-50%,-50%);
@@ -148,7 +140,7 @@ top:0;
  
 .guide p a {
         color:#FFF;
-        text-decoration:none;
+        text-decoration:none; 
 }
 .guide p .fa {
         display: block;
@@ -246,7 +238,7 @@ div#header {
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
+        display: flex;
   }
  
 div#header h1 {
@@ -269,7 +261,7 @@ ul#gnavi {
     max-width: 1000px;
     margin: 0;
     padding-left: 180px;
-    padding-top: 22px;
+        padding-top: 22px;
  
  
 }
@@ -297,28 +289,20 @@ ul#gnavi li a:hover {
 }
  
 /* main */
-#main_profile {
+.main {
         color:#FFF;
         width: 80%;
         margin:0 auto;
  
- 
-}
- 
-#main_services {
-        color:#FFF;
-        width: 80%;
-        margin:0 auto;
- 
- 
+       
 }
  
 div.mainName {
-  margin: 20px 0 50px 0;      
+  margin: 20px 0 50px 0;       
 }
 h1.title_E {
-  font-size: 3.7rem;
-  font-family: 'Tangerine', cursive;
+  font-size: 2.4rem;
+  font-family: 'Josefin Slab', serif;
   text-align:center;
   letter-spacing: 0.08em;
   margin-bottom:-10px;
@@ -326,7 +310,7 @@ h1.title_E {
 }
 h2.title_J {
   font-size: 1rem;
-  font-family: "Sawarabi Mincho";
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-weight:lighter;
   text-align:center;
   letter-spacing: 0.08em;
@@ -339,42 +323,12 @@ p#animation {
         color:#FFF;
         margin: 20px;
         line-height: 2em;
-                padding-bottom: 10px;
- 
-}
- 
-h1.index {
-        font-size: 1.5rem;
-        text-align: left;
-        padding-left: 20px;
-        font-family:"Sawarabi Mincho";
-        font-weight:lighter;
-        border-bottom:dotted;
-        border-bottom-color:#CCC;
-        border-bottom-width:thin;
-}
- 
-h1.index:nth-of-type(2n) {
-        padding-bottom: 10px;
-}
- 
-span.item {
-        font-size: 1rem;
-        color: white;
-}
- 
-span.item.attn {
-        font-weight: bold;     
-}
- 
-span.item.ref {
-        text-decoration:underline;
-        margin-bottom: 50px;
+       
 }
  
 div#footer {
         margin:0 auto;
-        width: 80%;   
+        width: 80%;    
         padding-top: 30px;
 }
  
@@ -383,8 +337,8 @@ div#footer ul {
         flex-flow: row;
         justify-content: center;
         margin: 0;
-        padding: 15px;
-        list-style-type: none;
+        padding: 6px;
+        list-style-type: none; 
         border-top: solid #c6c5c1 1px;
 }
  
@@ -401,44 +355,26 @@ div#footer ul a:hover {
 }
  
 address {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color:#FFF;
         font-family: 'Josefin Slab', serif;
          text-align:center;
          letter-spacing: 0.08em;
-                margin-bottom: 10px;
- 
- 
+       
+               
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1050px){
  
 .toggle {
 position: fixed;
 top: 15px;
 right: 15px;
-width: 26px;
-height: 26px;
+width: 30px;
+height: 30px;
 cursor: pointer;
 transition: transform 0.4s ease 0s,width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,-webkit-transform 0.4s ease 0s;
 opacity: 1;
-z-index: 6000;
-}
- 
-span.toggle_line {
-        position: absolute;
-        left: 0;
-        display: block;
-        width: 26px;
-        height: 1px;
-        background: white;     
-}
- 
-span.toggle_line._1 {
-        top: 7px;      
-}
- 
-span.toggle_line._2 {
-        top: 20px;     
+z-index: -10;
 }
  
 .smallSize {
@@ -466,21 +402,23 @@ span.toggle_line._2 {
     padding: 0 5%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    background-color: #F8F8F8;
-}
+    background-color: white;
  
+}
  
 h1.toggle-logo {
     width: 159px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 0 0 0 0;
     text-align: center;
  
 }
  
 ul#toggle-nav {
+        height: 100vh;
         display: block;
- 
+        justify-content: center;
+        align-items: center;
  
 }
  
@@ -489,14 +427,14 @@ ul#toggle-nav li {
     position: relative;
     margin-top: 5px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.08em;
-    line-height: 180%;
+        line-height: 180%;
 }
  
 ul#toggle-nav li a {
   text-decoration: none;
-  color: #CC33FF;
+  color: #00B200;
   font-weight: bold;
   position:relative;
   display: inline-block;
@@ -511,7 +449,7 @@ ul#toggle-nav li a::after{
    content: '';
    width: 0;
    height: 2px;
-   background-color: #F0C1FF;
+   background-color: #004800;
    transition: .3s;
    -webkit-transform: translateX(-50%);
    transform: translateX(-50%);
@@ -519,7 +457,5 @@ ul#toggle-nav li a::after{
  
 ul#toggle-nav li a:hover::after {
   width: 100%;
-  color: #F0C1FF;
+  color: #004800;
 }
-}
- 
