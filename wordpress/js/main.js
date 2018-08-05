@@ -81,11 +81,30 @@ $next.fadeIn($fade_speed).addClass("active");
 //クリックされたら表示する
 $(function(){
     $('#gnavi').hide();
-$('.fa').on('click', function() {
-  $("#gnavi").fadeIn('slow');
- 
+    $('.fa').on('click', function() {
+        $("#gnavi").fadeIn('slow');
+        //$('.interval').hide();
+        $('#wrapper').animate({'top':'-100vh'},300);
+    });
 });
+
+
+
+//とグルをクリックしたら表示させる シングルクオテーションで囲まれた場合、中身を維持しようとする
+$(function(){
+    $('.smallSize').hide();
+    $('.toggle').on('click', function() {
+        if ($('.smallSize').css('display') == 'block') {
+            // 表示されている場合の処理
+            $(".smallSize").fadeOut('slow');
+        } else {
+            // 非表示の場合の処理
+            $(".smallSize").fadeIn('slow');
+        }
+    });
 });
+
+
  
 //画面サイズが1024px以下になったらメニュー非表示
  
@@ -133,7 +152,7 @@ $(function(){
         });
 });
  
- 
+ /*
 //クッキー処理
 $(function(){
     if($.cookie("access")){
@@ -143,4 +162,6 @@ $(function(){
         $.cookie("access",$('body').addClass('access'));
     })
 });
+
+*/
  
