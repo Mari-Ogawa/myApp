@@ -94,6 +94,8 @@ $(function(){
 $(function(){
     $('.smallSize').hide();
     $('.toggle').on('click', function() {
+        $(this).toggleClass("clicked");
+
         if ($('.smallSize').css('display') == 'block') {
             // 表示されている場合の処理
             $(".smallSize").fadeOut('slow');

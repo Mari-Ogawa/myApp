@@ -25,7 +25,7 @@ span.appear {display:inline-block;}
 }
 }
 body {
-    background-color:#000;
+    background-color:#fff;
     margin:0;
 }
  
@@ -53,6 +53,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
  
 #intro p{
@@ -79,6 +80,7 @@ h1 {
     left:0;
     display: none;
     width: 100%;
+    background-color: black;
  
 }
  
@@ -396,18 +398,21 @@ span.item.ref {
     text-decoration:underline;
     margin-bottom: 50px;
 }
+
+/* blog */
+
  
 /* blog slick slider*/
 .slick-slider {
     margin: 30px auto 50px;
-        position: relative;
+    position: relative;
     display: block;
     box-sizing: border-box;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
  
@@ -477,13 +482,28 @@ span.toggle_line {
 }
 */
 span.toggle_line._1 {
-    top: 7px;   
+    top: 7px; 
+    transition: .3s ;  
+
+}
+.clicked span.toggle_line._1 {
+    top: 0px;   
+    transform: translate(0, 7px) rotate(45deg);
+    top: 0px;
+    transition: .3s ;
 }
  
 span.toggle_line._2 {
-    top: 19px;    
+    top: 19px;  
+    transition: .3s ;  
+
 }
  
+.clicked span.toggle_line._2 {
+    transform: translate(0, -19px) rotate(-45deg);
+    top: 26px;
+    transition: .3s ;
+}
 /*
 span.toggle_line._3 {
     top: 32px;    
