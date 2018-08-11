@@ -63,7 +63,7 @@ h1 {
     letter-spacing: 10px;
  
      /*font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;*/
-         font-family:'Hannari';
+    font-family:'Hannari';
     /*font-family: "Hannari";
     font-family: 'Noto Serif Japanese';
     font-family: "源ノ明朝","源暎こぶり明朝",serif;*/
@@ -91,11 +91,11 @@ h1 {
 }
  
 .interval img {
-     width: 100%;
+    width: 100%;
     height: 100%;
 }
  
-    #slide {
+#slide {
     margin:0 auto;
     position:relative;
  
@@ -110,22 +110,22 @@ h1 {
 }
  
 #slide img {
-position:absolute;
-left:0;
-top:0;
-display: block;
+    position:absolute;
+    left:0;
+    top:0;
+    display: block;
  
 }
  
 .logo {
     position: absolute;   
     top: 50%;
-     left: 50%;
-     -ms-transform: translate(-50%,-50%);
-     -webkit-transform: translate(-50%,-50%);
-     transform: translate(-50%,-50%);
-     margin:0;
-     padding:0;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
  
 }
  
@@ -250,9 +250,13 @@ div#header {
     left: 0;
     width: 100%;
     display: flex;
-        z-index: 2;
-        transition: .3s;
-        background-color: rgba(255,255,255,0.9);
+    z-index: 2;
+    transition: .3s;
+    background-color: rgba(255,255,255,0.9);
+}
+
+div#header img{
+    padding-left: 10px;
 }
  
 div#header h1 {
@@ -306,8 +310,8 @@ ul#gnavi li a:hover {
  
 /* main */
 section {
-        margin-top: 0px;
-        background-color:white;
+    margin-top: 0px;
+    background-color:white;
 }
  
  
@@ -319,9 +323,9 @@ section {
 }
  
 #main_profile img {
-        width: 100%;
-        margin: 0;
-        padding-top: 7px;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
 }
  
 #main_services {
@@ -334,9 +338,9 @@ section {
 }
  
 #main_services img {
-        width: 100%;
-        margin: 0;
-        padding-top: 7px;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
 }
  
 div.mainName {
@@ -349,7 +353,7 @@ h1.title_E {
     letter-spacing: 0.08em;
     margin-bottom:-10px;
     margin-top: 80px;
-        color: #333;
+    color: #333;
  
 }
 h2.title_J {
@@ -361,19 +365,20 @@ h2.title_J {
     -webkit-transform: rotate(.028deg);
     -ms-transform: rotate(.028deg);
     transform: rotate(.028deg);
-        color: #333;
+    color: #333;
 }
 p#animation {
     color:#FFF;
     margin: 20px;
     line-height: 2em;
     padding-bottom: 10px;
-        color: #333;
+    color: #333;
+    font-size: 0.9rem;
  
 }
  
 h1.index {
-        color: #333;
+    color: #333;
     font-size: 1.5rem;
     text-align: left;
     padding-left: 20px;
@@ -386,7 +391,7 @@ h1.index {
  
  
 span.item {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333;
 }
  
@@ -399,6 +404,100 @@ span.item.ref {
     margin-bottom: 50px;
 }
 
+/*privacy policy */
+#privacy {
+    width: 80%;
+    margin:0 auto;
+    padding-top: 70px;
+ 
+}
+#privacyNote {
+    margin: 40px auto;
+    padding-top: 20px;
+}
+ 
+#privacyNote p {
+    margin: 30px auto;
+    color: #333;
+    font-size: 0.9rem;
+}
+ 
+.privacyDetail h2{
+    margin: 20px auto;     
+    color: #333;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family:"Sawarabi Mincho";
+    font-weight:lighter;
+    border-bottom:dotted;
+    border-bottom-color:#c6c5c1;
+    border-bottom-width:thin;
+}
+ 
+.privacyDetail p{
+    margin: 30px auto;     
+    color: #333;
+    font-size: 0.9rem;
+ 
+}
+
+/*terms conditons*/
+#terms {
+    width: 80%;
+    margin:0 auto;
+    padding-top: 70px;
+ 
+}
+#termsNote {
+    margin: 40px auto;
+    padding-top: 20px;
+}
+ 
+#termsNote p {
+    margin: 30px auto;
+    color: #333;
+    font-size: 0.9rem;
+}
+ 
+.termsDetail h2{
+    margin: 20px auto;     
+    color: #333;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family:"Sawarabi Mincho";
+    font-weight:lighter;
+    border-bottom:dotted;
+    border-bottom-color:#c6c5c1;
+    border-bottom-width:thin;
+}
+ 
+.termsDetail p{
+    margin: 30px auto;     
+    color: #333;
+    font-size: 0.9rem;
+}
+
+a.mail {
+    color: #333;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+    text-decoration: underline;
+}
+
+a.mail:hover {
+    color: purple;
+    text-decoration: none;
+    opacity: 0.8;
+}
+a.mail:visited {
+    color: white;
+}
 /* blog */
 
  
@@ -446,7 +545,7 @@ div#footer ul a:hover {
  
 address {
     font-size: 0.8rem;
-    color:#FFF;
+    color:#333;
     font-family: 'Josefin Slab', serif;
     text-align:center;
     letter-spacing: 0.08em;
@@ -457,15 +556,15 @@ address {
 @media screen and (max-width: 1024px){
  
 .toggle {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        width: 26px;
-        height:26px;
-        cursor: pointer;
-        transition: transform 0.4s ease 0s,width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,-webkit-transform 0.4s ease 0s;
-        opacity: 1;
-        z-index: 6000;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 26px;
+    height:26px;
+    cursor: pointer;
+    transition: transform 0.4s ease 0s,width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s,-webkit-transform 0.4s ease 0s;
+    opacity: 1;
+    z-index: 6000;
 }
  
 span.toggle_line {
@@ -474,7 +573,7 @@ span.toggle_line {
     display: block;
     width: 26px;
     height: 1px;
-    background: purple;    
+    background: #333;    
 }
 /*
 .toggle.step2 span.toggle_line._1 {
@@ -489,8 +588,8 @@ span.toggle_line._1 {
 .clicked span.toggle_line._1 {
     top: 0px;   
     transform: translate(0, 7px) rotate(45deg);
-    top: 0px;
     transition: .3s ;
+    background: purple;
 }
  
 span.toggle_line._2 {
@@ -503,13 +602,9 @@ span.toggle_line._2 {
     transform: translate(0, -19px) rotate(-45deg);
     top: 26px;
     transition: .3s ;
+    background: purple;
 }
-/*
-span.toggle_line._3 {
-    top: 32px;    
-}
- 
-*/
+
 /*
 .toggle.active span.toggle_line._1 {
     -webkit-transform: translateY(25px) rotate(-45deg);
