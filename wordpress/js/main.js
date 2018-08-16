@@ -141,6 +141,21 @@ $(window).resize(function(){
     }
 });
  
+//toggle nav body 画面サイズが1024px以上になったらメニュー非表示
+ 
+$(window).resize(function(){
+    var w = $(window).width();
+    var x = 1024;
+    if (w >= x) {
+        $('.toggle-nav_body').css({
+            display: 'none'
+        });
+    } else {
+        $('.toggle-nav_body').css({
+            display: 'block'
+        });
+    }
+});
 //クリックしたらスクロール
 $(function(){
         $('a[href^=#]').click(function(){
