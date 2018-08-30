@@ -88,7 +88,7 @@ $(function(){
     });
 });
  
-/*
+
 //下にスクロールしたらイントロ画面に戻れないようにする
 var startPos = 0,winScrollTop = 0;
 $(window).on('scroll',function(){
@@ -100,9 +100,7 @@ $(window).on('scroll',function(){
     startPos = winScrollTop;
 });
  
-*/
- 
-//とグルをクリックしたら表示させる シングルクオテーションで囲まれた場合、中身を維持しようとする
+//toggleをクリックしたら表示させる シングルクオテーションで囲まれた場合、中身を維持しようとする
 $(function(){
     $('.smallSize').hide();
     $('.toggle').on('click', function() {
@@ -199,27 +197,6 @@ $(function() {
     }
     startPos = value;
   });
-});
- 
- 
-/* page_topボタン*/
- 
-$(function() {
-    var pagetop = $('#page_top');  
-    pagetop.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {  //2000pxスクロールしたら表示
-            pagetop.fadeIn();
-        } else {
-            pagetop.fadeOut();
-        }
-    });
-    pagetop.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500); //0.5秒かけてトップへ移動
-        return false;
-    });
 });
  
 /*
@@ -371,4 +348,14 @@ $(function(){
 });
  
 */
- 
+function accessCookie() {
+      var cookie = $.cookie('access');
+      if (cookie == undefined) {
+        console.log('初回アクセスです。');
+        $.cookie('access', 'on');
+      } else {
+        console.log('二回目以降です。');
+        console.log(cookie);
+      }
+    }
+    $(window).on('load', accessCookie);
